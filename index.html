@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Etch-a-Sketch game</h1>
+    <div class="main-container">
+        <div class="controls-container">
+            <div class="control-pair">
+                <label for="color-picker">Choose Color:</label>
+                <input type="color" id="color-picker" value="#8C9793">
+            </div>
+
+            <div class="control-pair">
+                <label for="grid-size">Grid Size:</label>
+                <input type="range" name="grid-size" id="grid-size" step="1" min="0" max="100" value="32">
+            </div>
+
+            <div class="control-pair">
+                <label for="solid-mode">Solid mode:</label>
+                <button id="solid-mode">SOLID</button>
+            </div>
+
+            <div class="control-pair">
+                <label for="gradient-mode">Gradient mode:</label>
+                <button id="gradient-mode">GRADIENT</button>
+            </div>
+
+            <div class="control-pair">
+                <label for="rainbow-mode">Rainbow mode:</label>
+                <button id="rainbow-mode">RAINBOW</button>
+            </div>
+
+            <div class="control-pair">
+                <label for="clear-grid">Clear scene:</label>
+                <button id="clear-grid">CLEAR</button>
+            </div>
+
+            <div class="control-pair">
+                <label for="toggle-cell-borders">Display borders:</label>
+                <button id="toggle-cell-borders">TOGGLE</button>
+            </div>
+        </div>
+
+        <div class="grid-container"></div>
+    </div>
+</body>
+</html>
